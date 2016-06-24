@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Rgb2NV12", "Rgb2NV12.vcxproj", "{D05EB833-7E64-4124-A656-6AAD227F9148}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release_TC|Win32 = Release_TC|Win32
+		Release_TC|x64 = Release_TC|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+		Template|Win32 = Template|Win32
+		Template|x64 = Template|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D05EB833-7E64-4124-A656-6AAD227F9148}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D05EB833-7E64-4124-A656-6AAD227F9148}.Debug|Win32.Build.0 = Debug|Win32
+		{D05EB833-7E64-4124-A656-6AAD227F9148}.Debug|x64.ActiveCfg = Debug|x64
+		{D05EB833-7E64-4124-A656-6AAD227F9148}.Debug|x64.Build.0 = Debug|x64
+		{D05EB833-7E64-4124-A656-6AAD227F9148}.Release_TC|Win32.ActiveCfg = Release|x64
+		{D05EB833-7E64-4124-A656-6AAD227F9148}.Release_TC|x64.ActiveCfg = Release|x64
+		{D05EB833-7E64-4124-A656-6AAD227F9148}.Release_TC|x64.Build.0 = Release|x64
+		{D05EB833-7E64-4124-A656-6AAD227F9148}.Release|Win32.ActiveCfg = Release|Win32
+		{D05EB833-7E64-4124-A656-6AAD227F9148}.Release|Win32.Build.0 = Release|Win32
+		{D05EB833-7E64-4124-A656-6AAD227F9148}.Release|x64.ActiveCfg = Release|x64
+		{D05EB833-7E64-4124-A656-6AAD227F9148}.Release|x64.Build.0 = Release|x64
+		{D05EB833-7E64-4124-A656-6AAD227F9148}.Template|Win32.ActiveCfg = Release|x64
+		{D05EB833-7E64-4124-A656-6AAD227F9148}.Template|x64.ActiveCfg = Release|x64
+		{D05EB833-7E64-4124-A656-6AAD227F9148}.Template|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
