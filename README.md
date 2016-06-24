@@ -29,10 +29,10 @@ Supporting BT.709 standard.
 Can be incorporated into existing image filter, and do the processing in a single pass to improve performance.
 
 For testing the implementation, I compared the result of with Matalb reference (I used my own Matalb implementation as reference).
-Testing istructions:
+Testing istructions:  
 1. Execute BuildInput.m in Matlab to create input image.
 2. Execute Rgb2NV12 in Visual Studio.
 3. Execute TestOutput.m in Matlab.
 
-Performance:
+Performance:  
 When compiling the code using Intel Compiler 15.0, the performance of my optimized code was about the same as IPP performance.
