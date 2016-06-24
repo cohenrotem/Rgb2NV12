@@ -1,6 +1,8 @@
 # Rgb2NV12
 Convert RGB to NV12 color space, in Matlab, IPP, Plain C, and SSE optimized code.
 
+NV12 format definition: http://www.fourcc.org/yuv.php#NV12
+
 Video encoders like Intel® Media SDK require NV12 video input format.
 NV12 format is YUV 4:2:0 format ordered in memory with a Y plane first, followed by packed chroma samples in interleaved UV plane.
 Example:
@@ -11,11 +13,12 @@ Better description can be found here: http://stackoverflow.com/questions/3142651
 
 I did some Web research, and found out that regarding NV12, YUV is defined as YCbCr color space. There are currently at least 2 possible YCbCr formats apply NV12:
 
-- BT.601 - Applies SDTV
-- BT.709 - Applies HDTV
+- BT.601 - Applies SDTV: https://en.wikipedia.org/wiki/Rec._601
+- BT.709 - Applies HDTV: https://en.wikipedia.org/wiki/Rec._709
 
 I found out that IPP function for converting RGB to NV12 exists (applies BT.601):
 ippiRGBToYCbCr420_8u_C3P2R
+https://software.intel.com/en-us/node/503959
 
 Although IPP can be used, I have decided to implement optimized code using SSE intrinsics.
 The IPP function is limited for converting RGB and to BT.601 standard.
