@@ -3,13 +3,20 @@ Convert RGB to NV12 color space, in Matlab, IPP, Plain C, and SSE optimized code
 
 NV12 format definition: http://www.fourcc.org/yuv.php#NV12
 
-Video encoders like Intel® Media SDK require NV12 video input format.  
-NV12 format is YUV 4:2:0 format ordered in memory with a Y plane first, followed by packed chroma samples in interleaved UV plane.  
+NV12 format is YUV 4:2:0 format ordered in memory with a Y plane first, followed by packed chroma samples in interleaved UV plane.
 Example:  
+
 YYYYYY  
 YYYYYY  
 UVUVUV  
-Better description can be found here: http://stackoverflow.com/questions/31426515/image-formats-nv12-storage-in-memory?rq=1  
+http://i.stack.imgur.com/XboNY.png
+
+RGB color format, refers to Pixel-Order RGB (byte per pixel, lower byte is Red):
+RGBRGBRGBRGBRGB
+RGBRGBRGBRGBRGB
+http://i.stack.imgur.com/y0ggj.png
+
+Better description can be found here: http://stackoverflow.com/questions/37768751/how-to-convert-rgb-to-nv12-color-space-using-ipp
 
 I did some Web research, and found out that regarding NV12, YUV is defined as YCbCr color space. There are currently at least 2   possible YCbCr formats apply NV12:  
 
@@ -31,7 +38,7 @@ Can be incorporated into existing image filter, and do the processing in a singl
 For testing the implementation, I compared the result of with Matalb reference (I used my own Matalb implementation as reference).  
 Testing istructions:  
 1. Execute BuildInput.m in Matlab to create input image.  
-2. Execute Rgb2NV12 in Visual Studio.  
+2. Execute Rgb2NV12 in Visual Studio 2010 (select x64 configuration).
 3. Execute TestOutput.m in Matlab.  
 
 Performance:  
